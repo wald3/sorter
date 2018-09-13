@@ -382,7 +382,7 @@ describe('Sorter', () => {
         sorter.add({ age: 7, smth: 'Some' });
   
         sorter.setComparator(STRINGIFY_COMPARATOR);
-        sorter.sort([2, 1]);
+        sorter.sort([2, 1]);  
         sorter.sort([3, 1]);
   
         assert.deepEqual(sorter.at(0).age, 20);
